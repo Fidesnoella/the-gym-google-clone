@@ -16,8 +16,8 @@
     <title>Google</title>
   </head>
   <body class="text-gray-800 text-sm font-Arial">
-    <header class="flex justify-end w-full">
-      <div class="hidden md:flex space-x-4 p-2 items-center">
+    <header class="md:flex md:justify-end w-full">
+      <div class="hidden md:flex space-x-4 p-2 items-center justify-start">
         <a href="#" class="hover:underline">Gmail</a>
         <a href="#" class="hover:underline">Images</a>
         <a href="#" class="hover:bg-gray-200 rounded-full p-4">
@@ -31,9 +31,43 @@
           />
         </a>
       </div>
+      <div class="flex justify-between space-x-4 p-2 items-center md:hidden">
+        <div class="text-xs space-x-3 flex items-center">
+          <a href="#">
+            <svg
+              style="fill: #70757a; width: 24px; height: 24px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="text-[#4285f4] border-b-[#4285f4] border-b-2 p-2"
+            >ALL</a
+          >
+          <a
+            href="#"
+            class="p-2 hover:border-b-2 outline-none hover:border-b-black"
+            >IMAGES</a
+          >
+        </div>
+        <div class="flex">
+          <a href="#" class="hover:bg-gray-200 rounded-full p-4">
+            <img src="../dist/image/dots-menu.png" alt="" />
+          </a>
+          <a href="#" class="hover:bg-gray-200 rounded-full p-2">
+            <img
+              src="../dist/image/account_circle.svg"
+              alt="user"
+              class="w-8 h-8"
+            />
+          </a>
+        </div>
+      </div>
     </header>
     <main
-      class="container py-8 p-2 md:mx-auto max-w-xl flex flex-col space-y-6"
+      class="container py-8 p-2 mx-auto max-w-md md:max-w-xl flex flex-col space-y-6"
     >
       <img
         src="../dist/image/glue-google-color-logo.svg"
@@ -55,11 +89,13 @@
         <div class="place-self-center cursor-pointer">
           <img src="../dist/image/google-voice.png" alt="" />
         </div>
-        <div class="place-self-center cursor-pointer">
-          <!-- <img src="/dist/image/download.svg" alt="" /> -->
+        <div class="place-self-center cursor-pointer ml-4">
+          <img src="/dist/image/download.svg" alt="" class="w-8" />
         </div>
       </div>
-      <div class="mx-auto flex space-x-2 text-[#3c4043]">
+      <div
+        class="mx-auto sm:flex space-y-3 sm:space-y-0 sm:space-x-2 text-[#3c4043]"
+      >
         <button
           class="px-4 py-2 rounded bg-gray-100 border-gray-100 border-2 cursor-pointer hover:shadow-md hover:border-2 hover:border-[#dadce0]"
         >
@@ -71,7 +107,7 @@
           I'm Felling Lucky
         </button>
       </div>
-      <div class="mx-auto text-sm flex gap-3">
+      <div class="mx-auto text-sm sm:flex gap-3">
         Google offered In:
         <a href="#" class="text-[#1a0dab] hover:underline">Francais</a>
         <a href="#" class="text-[#1a0dab] hover:underline">Kiswahili</a>
@@ -79,21 +115,21 @@
       </div>
     </main>
     <footer
-      class="flex flex-col p-2 w-full bg-[#f2f2f2] text-gray-500 text-sm leading-10 bottom-0 absolute"
+      class="flex flex-col p-2 w-full bg-[#f2f2f2] text-gray-500 text-sm leading-10 absolute bottom-0"
     >
       <div class="border-b-2 w-full border-solid border-[#dadce0]">
-        <a href="#" class="hover:underline px-8 pb-2">Rwanda</a>
+        <a href="#" class="px-8 pb-2">Rwanda</a>
       </div>
       <div
-        class="flex flex-col mx-auto items-center md:mx-0 md:items-start md:flex-row md:justify-between md:px-8"
+        class="flex flex-col sm:mx-auto items-center md:mx-0 md:items-start md:flex-row md:justify-between md:px-8"
       >
-        <div class="space-x-3 md:space-x-6">
+        <div class="space-x-2 sm:space-x-3 md:space-x-6">
           <a href="#" class="hover:underline">About</a>
           <a href="#" class="hover:underline">Advertising</a>
           <a href="#" class="hover:underline">Business</a>
           <a href="#" class="hover:underline">How Search Works</a>
         </div>
-        <div class="space-x-3 md:space-x-6">
+        <div class="space-x-2 sm:space-x-3 md:space-x-6">
           <a href="#" class="hover:underline">Privacy</a>
           <a href="#" class="hover:underline">Terms</a>
           <a href="#" class="hover:underline">Settings</a>
