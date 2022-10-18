@@ -16,6 +16,10 @@ module.exports = {
         'lightviolet': ' #dfe1e5',
         'white': '#f2f2f2', 
         'zinc': '#70757a', 
+      },
+      boxShadow:{
+        searchshadow:"0 1px 6px rgb(32 33 36 / 28%)",
+        buttonShadow:"0 1px 1px rgb(0 0 0 / 10%);"
       }
     },
   },
